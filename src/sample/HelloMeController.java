@@ -44,6 +44,8 @@ public class HelloMeController {
             lp.setText(msg);
 
         }
+        WebEngine engine = webView.getEngine();
+        engine.load("http://bit.ly/tecn-progr");
     }
 
     @FXML // This method is called by the FXMLLoader when initialization is complete
@@ -60,6 +62,8 @@ public class HelloMeController {
     public void handleClear(ActionEvent actionEvent) {
         txtNome.setText("");
         txtResult.setText("");
+        WebEngine engine = webView.getEngine();
+        engine.load("http://falkhausen.de/JavaFX-8/index.html");
 
     }
 }
