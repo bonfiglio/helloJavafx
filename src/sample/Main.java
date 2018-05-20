@@ -8,12 +8,12 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    @Override
+    @Override //riscrivo il metodo start della classe Application
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("HelloMe.fxml"));
-        primaryStage.setTitle("Hello World HI JAVA FX  nice to meet you ");
-        primaryStage.setScene(new Scene(root));
-        primaryStage.show();
+        Parent root = FXMLLoader.load(getClass().getResource("HelloMe.fxml")); //carico form fxml
+        primaryStage.setTitle("Hello World HI JAVA FX  nice to meet you "); // imposto titolo
+        primaryStage.setScene(new Scene(root)); // imposto scena con form
+        primaryStage.show(); // attivo scena
     }
 
 
